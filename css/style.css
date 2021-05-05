@@ -1,4 +1,4 @@
-body {
+html, body {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
@@ -20,8 +20,6 @@ header{
     top: 0;
     background-color: black;
     z-index: 100;
-    margin-left: 10px;
-    margin-right: 10px;
 
 }
 a:link, a:visited {
@@ -41,10 +39,12 @@ nav ul li{
     float: right;
     margin-right: 10px;
     align-items: center;
+    padding-right: 10px;
 }
 main{
     margin-top: 70px;
     margin: auto;
+    width: 1200px;
 }
 .mission{
     position: relative;
@@ -107,27 +107,40 @@ img {
     height: 500px;
     background-image: url("/Matt/MattCodingProjects/TeaCozy/images/img-locations-background.webp");
     background-position: center;
-    z-index: 50;
-}
-
-.locationcontainer{
-    display: flex;
-    flex-direction:row;
-    align-content: center;
-    opacity: 1.0;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
-}
-.locationbox{
-    width: 300px;
-    margin: 5px 20px;
-    background-color: black;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
-    float: left;
+    margin: 40x;
+    padding-top: 70px;
+}
+.locationheading{
+    display: none;
+    position: absolute;
+    top: 50px;
+}
+.locationcontainer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+.locationbox{
+    opacity: 1.0;
+    padding: 10px;
+    margin: 5px 20px;
+    background-color: black;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footercontainer{
+    height: 200px;
 }
 .copyright{
     text-align: left;
     margin-left: 20px;
+    padding-bottom: 20px;
 }
