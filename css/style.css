@@ -105,7 +105,7 @@ img {
 }
 .locations{
     height: 500px;
-    background-image: url("/Matt/MattCodingProjects/TeaCozy/images/img-locations-background.webp");
+    background-image: url("../images/img-locations-background.webp");
     background-position: center;
     overflow: hidden;
     justify-content: center;
